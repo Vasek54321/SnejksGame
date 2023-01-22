@@ -14,24 +14,24 @@
 </head>
 
 <body class="bg-dark">
-  <div class="container-fluid p-5 bg-success text-white text-center">
+  <div class="container-fluid p-4 bg-success text-white text-center">
     <h1>Snejks Game</h1>
   </div>
     
   <div class="container mt-5 bg-dark">
-    <div class="row">
+    <div class="">
       <div class="bg-dark text-white text-center"><h3>Cílem je získat co největší score.</h3></div>
-      <div class="bg-dark text-white text-center p-2"><h3>Pro započetí hry stiskni tlačítko start.</h3></div>
-      <button onclick="Snake()" type="button" class="btn btn-success p-4"><h4>START</h4></button>
+      <div class="bg-dark text-white text-center p-2"><h3>Pro započetí hry stiskni jakoukoli z šipek.</h3></div>
       <div class="text-white text-center p-2"><h3 id="score">Score: 0</h3></div>
+      <div class="text-white text-center"><h1 id="gameover">-</h1></div>
+      <div class="text-center"><button type="button" class="btn btn-success text-center"><a href="./index.html" class="text-white">RESTART</a></button></div>
     </div>
   </div>
 
   <script src="sketch.js"></script>
   <script src="snake.js"></script>
-  
-  
-  <p>-</p>
+
 </body>
+
 
 </html>

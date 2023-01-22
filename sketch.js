@@ -2,7 +2,7 @@ var s;
 var scl = 20;
 
 var food;
-
+//vytvoreni canvasu a spusteni procesu
 function setup() {
   createCanvas(1200, 900);
   s = new Snake();
@@ -10,7 +10,7 @@ function setup() {
   pickLocation();
 
 }
-
+//funkce na random lokaci (food)
 function pickLocation() {
   var cols = floor(width / scl);
   var rows = floor(height / scl);
@@ -18,10 +18,7 @@ function pickLocation() {
   food.mult(scl);
 }
 
-function mousePressed() {
-  s.total++;
-}
-
+//vykresleni jidla a pozadi
 function draw() {
   background(0, 50, 0, 170);
 
@@ -40,7 +37,7 @@ function draw() {
 
 
 
-
+//funkce na zaznamenani stisku klaves
 function keyPressed() {
   if (keyCode === UP_ARROW) {
     s.dir(0, -1);
